@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<HTML>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Password Keeper</title>
+        <link rel="stylesheet" href="style.css"/>
+
+    </head>
+
+    <body>
+         <h1><center>Password Keeper</center></h1>
+         <br>
+         <!--search password-->
+
+         <div><center>
+            <div class="search-wrapper">
+                Search:
+                <input id="search" type="text" placeholder="Search your password" />
+              </div>
+              <ul id="passwordcount"></ul>
+         </center>
+            </div>
+
+          <!-- INPUT FIELDS MAIN-->
+            <fieldset id="passwords">
+                <legend>Enter details</legend>
+                <div>
+                    Website:<input  id="website" type ="text" placeholder="Enter Website name"><br>
+                    Password:<input  id="password" type="text" placeholder="Enter Password"><br>
+                    <button type="submit">Save</button> 
+                </div>
+            </fieldset>
+
+            <ul id="allpswd">
+                All Passwords
+              </ul>
+          
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"></script>
+            <script src="index.js"></script>
+          
+    </body>
+</HTML>
